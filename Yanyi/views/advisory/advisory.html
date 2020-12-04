@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Noto+Serif+TC:wght@500;600&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;family=Noto+Serif+TC:wght@300;400&amp;display=swap"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
   </head>
   <body>
@@ -68,9 +70,13 @@
               <div class="u_flex"> 
                 <div class="text">      
                   <p>透過專業、獨立的諮詢過程，針對個別狀況的不同，給予適當的建議以及和客戶充分討論需求，才能達成每個人心中最好的模樣。</p>
-                </div><a class="c_button-bg-color" href="#"><span class="txt">閱讀更多</span></a>
+                </div>
+                <div class="content">
+                  <div class="content_wrap">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsum incidunt facere consequuntur adipisci deserunt est unde debitis tenetur assumenda, ducimus provident officia sequi quibusdam fugiat saepe doloremque veritatis a.</p>
+                  </div><a class="open jq-show-content" href="#"></a>
+                </div>
               </div>
-              <div class="icon"><img src="../../assets/images/icon/advisory1.svg" alt=""/></div>
             </article>
             <article class="advisory-menu_item">
               <div class="title-group"><span class="number">02</span>
@@ -79,9 +85,13 @@
               <div class="u_flex"> 
                 <div class="text">      
                   <p>透過專業、獨立的諮詢過程，針對個別狀況的不同，給予適當的建議以及和客戶充分討論需求，才能達成每個人心中最好的模樣。</p>
-                </div><a class="c_button-bg-color" href="#"><span class="txt">閱讀更多</span></a>
+                </div>
+                <div class="content">
+                  <div class="content_wrap">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, porro voluptatem, atque, quam inventore cupiditate incidunt in modi autem aliquam non? Ducimus nobis, praesentium exercitationem quae tempore libero cupiditate minima.</p>
+                  </div><a class="open jq-show-content" href="#"></a>
+                </div>
               </div>
-              <div class="icon"><img src="../../assets/images/icon/advisory3.svg" alt=""/></div>
             </article>
             <article class="advisory-menu_item">
               <div class="title-group"><span class="number">03</span>
@@ -90,9 +100,49 @@
               <div class="u_flex"> 
                 <div class="text">      
                   <p>透過專業、獨立的諮詢過程，針對個別狀況的不同，給予適當的建議以及和客戶充分討論需求，才能達成每個人心中最好的模樣。</p>
-                </div><a class="c_button-bg-color" href="#"><span class="txt">閱讀更多</span></a>
+                </div>
+                <div class="content">
+                  <div class="content_wrap">
+                    <form action="" method="post">
+                      <div class="u_flex">
+                        <div class="form-group input-name">
+                          <label for="name">姓名</label>
+                          <input type="text" name="name"/>
+                        </div>
+                        <div class="form-group input-gender"><span class="gender-title">性別</span>
+                          <div class="radio">
+                            <div class="group">
+                              <input id="male" type="radio" name="gender" value="female"/>
+                              <label for="male">女</label>
+                            </div>
+                            <div class="group">
+                              <input id="female" type="radio" name="gender" value="male"/>
+                              <label for="female">男</label>
+                            </div>
+                            <div class="group">
+                              <input id="other" type="radio" name="gender" value="other"/>
+                              <label for="other">其他</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group input-radio">
+                        <label for="items">諮詢項目</label>
+                        <select id="items" name="items">
+                          <option value="eyes">雙眼皮</option>
+                          <option value="face">臉部</option>
+                          <option value="body">身體</option>
+                        </select>
+                      </div>
+                      <div class="form-group input-textarea">
+                        <label for="detail">詳述問題</label>
+                        <textarea name="detail" cols="50" rows="15"></textarea>
+                      </div>
+                      <input class="c_button-bg-color" type="submit" value="送出表單"/>
+                    </form>
+                  </div><a class="open jq-show-content" href="#"></a>
+                </div>
               </div>
-              <div class="icon"><img src="../../assets/images/icon/advisory2.svg" alt=""/></div>
             </article>
           </div>
         </section>
@@ -175,6 +225,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../../assets/javascripts/all.js"></script>
   </body>
 </html>
