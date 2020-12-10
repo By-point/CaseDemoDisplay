@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Serif+TC:wght@400;500;600&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
   </head>
   <body>
-    <div class="an-progress"><span class="an-progress-bar"></span><span class="an-progress-text">0</span></div>
     <header class="header jq-header">
       <div class="header_wrap">
         <h1 class="header-logo gs-header-logo"><a href="../index/index.html"> 
@@ -204,63 +206,103 @@
                 </div>
                 <div class="content">
                   <div class="content_wrap">
-                    <form action="" method="post">
+                    <form class="wpcf7-form init" action="/wordpress/contact/#wpcf7-f167-o1" method="post" novalidate="novalidate" data-status="init">
+                      <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="167"/>
+                        <input type="hidden" name="_wpcf7_version" value="5.3.1"/>
+                        <input type="hidden" name="_wpcf7_locale" value="zh_TW"/>
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f167-o1"/>
+                        <input type="hidden" name="_wpcf7_container_post" value="0"/>
+                        <input type="hidden" name="_wpcf7_posted_data_hash"/>
+                      </div>
                       <div class="form-group input-name">
-                        <label for="name">姓名</label>
-                        <input type="text" name="name"/>
+                        <label for="your-name">姓名</label><br/><span class="wpcf7-form-control-wrap your-name">
+                          <input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="your-name" type="text" name="your-name" size="40" aria-required="true" aria-invalid="false"/></span>
                       </div>
                       <div class="form-group input-gender"><span class="gender-title">性別</span>
+                        <p></p>
                         <div class="radio">
-                          <div class="group">
-                            <input id="male" type="radio" name="gender" value="female"/>
-                            <label for="male">女</label>
+                          <div class="group"><span class="wpcf7-form-control-wrap gender"><span class="wpcf7-form-control wpcf7-radio" id="female"><span class="wpcf7-list-item first last">
+                                  <label><span class="wpcf7-list-item-label">female</span>
+                                    <input type="radio" name="gender" value="female" checked="checked"/>
+                                  </label></span></span></span>
+                            <p></p>
+                            <p>
+                              <label for="female">女</label>
+                            </p>
                           </div>
-                          <div class="group">
-                            <input id="female" type="radio" name="gender" value="male"/>
-                            <label for="female">男</label>
+                          <div class="group"><span class="wpcf7-form-control-wrap gender"><span class="wpcf7-form-control wpcf7-radio" id="male"><span class="wpcf7-list-item first last">
+                                  <input type="radio" name="gender" value="male" checked="checked"/><span class="wpcf7-list-item-label">male</span></span></span></span><br/>
+                            <label for="male">男</label>
                           </div>
-                          <div class="group">
-                            <input id="other" type="radio" name="gender" value="other"/>
+                          <div class="group"><span class="wpcf7-form-control-wrap gender"><span class="wpcf7-form-control wpcf7-radio" id="other"><span class="wpcf7-list-item first last">
+                                  <input type="radio" name="gender" value="other" checked="checked"/><span class="wpcf7-list-item-label">other</span></span></span></span><br/>
                             <label for="other">其他</label>
                           </div>
+                          <p></p>
                         </div>
                       </div>
                       <div class="form-group input-name">
-                        <label for="tel">電話</label>
-                        <input id="tel" type="text" name="tel"/>
+                        <label for="tel">電話</label><br/><span class="wpcf7-form-control-wrap tel">
+                          <input class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" id="tel" type="tel" name="tel" size="40" aria-required="true" aria-invalid="false"/></span>
                       </div>
                       <div class="form-group input-name">
-                        <label for="line">Line ID</label>
-                        <input id="line" type="text" name="line"/>
+                        <label for="line">Line ID</label><br/><span class="wpcf7-form-control-wrap line">
+                          <input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="line" type="text" name="line" size="40" aria-required="true" aria-invalid="false"/></span>
                       </div>
                       <div class="form-group"><span class="gender-title">您的困擾</span>
+                        <p></p>
                         <div class="radio jq-input-worry">
-                          <div class="group">
-                            <input id="worry1" type="radio" name="worry" value="煩惱詢問"/>
+                          <div class="group"><span class="wpcf7-form-control-wrap worry"><span class="wpcf7-form-control wpcf7-radio" id="worry1"><span class="wpcf7-list-item first last">
+                                  <input type="radio" name="worry" value="煩惱詢問" checked="checked"/><span class="wpcf7-list-item-label">煩惱詢問</span></span></span></span><br/>
                             <label for="worry1">煩惱詢問</label>
                           </div>
-                          <div class="group">
-                            <input id="worry2" type="radio" name="worry" value="手術諮詢"/>
+                          <div class="group"><span class="wpcf7-form-control-wrap worry"><span class="wpcf7-form-control wpcf7-radio" id="worry2"><span class="wpcf7-list-item first last">
+                                  <input type="radio" name="worry" value="手術諮詢" checked="checked"/><span class="wpcf7-list-item-label">手術諮詢</span></span></span></span><br/>
                             <label for="worry2">手術諮詢</label>
                           </div>
+                          <p></p>
                         </div>
                       </div>
                       <div class="form-group input-radio">
                         <label for="items">諮詢項目</label>
+                        <p></p>
                         <div class="u_flex">
-                          <select class="advisory-item jq-main-items" id="itemsMain" name="items" disabled="disabled">
-                            <option selected="selected" disabled="disabled" style="display: none" value="">請先選擇您的困擾</option>
-                          </select>
-                          <select class="advisory-item-details jq-detail-items" id="itemsDetail" name="items-details" disabled="disabled">
-                            <option selected="selected" disabled="disabled" style="display: none" value="">--------------</option>
-                          </select>
+                          <!--  沒有項目的select --><br/>
+                          <!--  <span class="wpcf7-form-control-wrap items"><select name="items" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required advisory-item jq-main-items" id="itemsMain" aria-required="true" aria-invalid="false"><option value="">---</option></select></span> -->
+                          <p></p>
+                          <p><span class="wpcf7-form-control-wrap items">
+                              <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required advisory-item jq-main-items" id="itemsMain" name="items" aria-required="true" aria-invalid="false">
+                                <option value="value">---</option>
+                                <option value="test">test</option>
+                              </select></span><br/>
+                            <!--
+                            <select class="advisory-item jq-main-items" id="itemsMain" name="items" disabled="disabled"><br />
+                                  <option selected="selected" disabled="disabled" style="display: none" value="">請先選擇您的困擾</option><br />
+                                </select> 
+                            -->
+                          </p>
+                          <p><span class="wpcf7-form-control-wrap items-details">
+                              <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required advisory-item-details jq-detail-items" id="itemsDetail" name="items-details" aria-required="true" aria-invalid="false">
+                                <option value="value">---</option>
+                                <option value="test">test</option>
+                              </select></span><br/>
+                            <!--
+                            <select class="advisory-item-details jq-detail-items" id="itemsDetail" name="items-details" disabled="disabled"><br />
+                                  <option selected="selected" disabled="disabled" style="display: none" value="">--------------</option><br />
+                                </select> 
+                            -->
+                          </p>
                         </div>
                       </div>
                       <div class="form-group input-textarea">
-                        <label for="detail">詳述問題</label>
-                        <textarea name="detail" cols="50" rows="15"></textarea>
+                        <label for="detail">詳述問題</label><br/><span class="wpcf7-form-control-wrap detail">
+                          <textarea class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" id="detail" name="detail" cols="40" rows="10" aria-required="true" aria-invalid="false"></textarea></span>
                       </div>
-                      <input class="c_button-bg-color" type="submit" value="送出表單"/>
+                      <p>
+                        <input class="wpcf7-form-control wpcf7-submit c_button-bg-color" type="submit" value="送出表單"/><span class="ajax-loader"></span>
+                      </p>
+                      <div class="wpcf7-response-output" aria-hidden="true"></div>
                     </form>
                   </div>
                 </div>
