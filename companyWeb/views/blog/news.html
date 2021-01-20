@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>百典創意行銷</title>
+    <title>百點創意行銷</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"/>
@@ -22,10 +22,10 @@
       </div>
       <nav class="header_menu_wrap">
         <ul class="header_nav">
+          <li class="header_nav_item js-menu-home gs-header-menu-item"><a href="../index/index.html">home</a></li>
           <li class="header_nav_item js-menu-about gs-header-menu-item"><a href="../about/about.html">ABOUT US</a></li>
           <li class="header_nav_item js-menu-service gs-header-menu-item"><a href="../service/service.html">SERVICE</a></li>
-          <li class="header_nav_item js-menu-price gs-header-menu-item"><a href="../price/price.html">PRICE</a></li>
-          <li class="header_nav_item js-menu-blog gs-header-menu-item"><a href="../news/news.html">BLOG</a></li>
+          <li class="header_nav_item js-menu-news gs-header-menu-item"><a href="../news/news.html">NEWS</a></li>
           <li class="header_nav_item js-menu-contact gs-header-menu-item"><a href="../contact/contact.html">CONTACT</a></li>
         </ul>
       </nav>
@@ -33,71 +33,79 @@
         <p>SCROLL DOWN</p>
       </div>
     </header>
-    <main class="contact">
-      <div class="contact_wrap l_page-space">
-        <div class="contact_title">
+    <main class="news">
+      <div class="news_wrap l_page-space">
+        <div class="news_title">
           <div class="l_container">
             <div class="c_page-title-group">
-              <div class="c_dash-title double gs-page-title-group-title"><span class="en gs-page-title-group-title">CONTACT</span><span class="ch gs-page-title-group-title">聯絡我們</span></div>
+              <div class="c_dash-title double gs-page-title-group-title"><span class="en gs-page-title-group-title">NEWS</span><span class="ch gs-page-title-group-title">ニュース</span></div>
+              <ul class="c_link-list">
+                <li class="c_link gs-page-title-menu"><a href="#"><span class="txt">ALL</span></a></li>
+                <li class="c_link gs-page-title-menu"><a href="#"><span class="txt">INFORMATION</span></a></li>
+                <li class="c_link gs-page-title-menu"><a href=""><span class="txt">PRESS RELEASE</span></a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="contact_main c_section-bg left">
+        <section class="news_main c_section-bg left">
           <div class="l_container">
-            <div class="contact_content c_shadow gs-page-first-section">
-              <h3 class="msg">
-                親愛的顧客您好：
-                若您對百典有任何的建議或指教，我們非常歡迎您能來信指教，若您有急需反映之事項，請您致電 客服中心：<a href="tel:03-428-4647">03-4284647</a>、線上將有專人為您提供服務。 客服中心服務時間為早上10:00-晚上7:00。感謝您。
-              </h3>
-              <form class="contactForm" action="" method="post">
-                <div class="form-row">
-                  <label for="name">姓名</label>
-                  <input class="c_bg-white_f" type="text" name="name" placeholder="請輸入姓名"/>
-                </div>
-                <div class="form-row">
-                  <label for="phone">聯絡電話</label>
-                  <input class="c_bg-white_f" type="tel" name="phone" placeholder="請輸入連絡電話"/>
-                </div>
-                <div class="form-row">
-                  <label for="email">電子郵件</label>
-                  <input class="c_bg-white_f" type="email" name="email" placeholder="請輸入電子信箱"/>
-                </div>
-                <div class="form-row">
-                  <label for="report">需求簡述</label>
-                  <textarea class="c_bg-white_f" name="report" cols="30" placeholder="請輸入想諮詢的問題"></textarea>
-                </div>
-                <div class="form-row center-set">
-                  <input class="submit-btn" type="submit" value="確認送出"/>
-                </div>
-              </form>
+            <div class="news_content c_shadow gs-page-first-section">
+              <ul class="item-list">
+                <li class="item">
+                  <article><a href="#">
+                      <div class="info">
+                        <time class="date">2020.01.15</time>
+                        <p class="category">PRESS </br>RELEASE</p>
+                      </div>
+                      <h2 class="title">竹書房とBizconcier、デジタルコンテンツ事業の合弁会社を設立</h2></a></article>
+                </li>
+                <li class="item">
+                  <article><a href="#">
+                      <div class="info">
+                        <time class="date">2020.01.15</time>
+                        <p class="category">PRESS RELEASE</p>
+                      </div>
+                      <h2 class="title">竹書房とBizconcier、デジタルコンテンツ事業の合弁会社を設立</h2></a></article>
+                </li>
+                <li class="item">
+                  <article><a href="#">
+                      <div class="info">
+                        <time class="date">2020.01.15</time>
+                        <p class="category">PRESS </br>RELEASE</p>
+                      </div>
+                      <h2 class="title">竹書房とBizconcier、デジタルコンテンツ事業の合弁会社を設立</h2></a></article>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer class="footer">
       <div class="footer_top js-scrollTop"><a href="#"><span class="txt">BACK TO TOP</span><span class="c_icon"><span class="c_circle"></span></span></a></div>
       <section class="footer_news">
         <div class="news-first">
-          <h2 class="title">最新文章</h2>
+          <h2 class="title">LATEST NEWS</h2>
+          <div class="news-title">
+            <time>2020-01-15</time><span>PRESS RELEASE</span>
+          </div>
         </div>
         <div class="news-link"><a href="../news/news.html">竹書房とBizconcier、デジタルコンテンツ事業の合弁会社を設立</a></div>
         <div class="more-btn"><a href="../news/news.html"><span class="text">MORE</span><span class="c_icon"><span class="c_circle"></span></span></a></div>
       </section>
       <nav>
         <ul class="footer_nav">
+          <li class="footer_nav_item js-menu-home"><a href="../index/index.html">home</a></li>
           <li class="footer_nav_item js-menu-about"><a href="../about/about.html">ABOUT US</a></li>
           <li class="footer_nav_item js-menu-service"><a href="../service/service.html">SERVICE</a></li>
-          <li class="footer_nav_item js-menu-price"><a href="../price/price.html">PRICE</a></li>
-          <li class="footer_nav_item js-menu-blog"><a href="../news/news.html">BLOG</a></li>
+          <li class="footer_nav_item js-menu-news"><a href="../news/news.html">NEWS</a></li>
           <li class="footer_nav_item js-menu-contact"><a href="../contact/contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="footer_logo"><a href="#"> <img src="../../assets/images/logo-icon.svg" alt=""/>
           <p>百典創意行銷</p></a></div>
       <p class="footer_address">
-         桃園市中壢區龍勇路42巷8弄2號</p>
-      <p class="footer_phone"><a href="tel:03-428-4647">03-4284647</a></p><small class="footer_copyright">Copyright @Bizconcier All Rights Reserved.</small>
+         桃園市中壢區龍勇路42巷8弄2號</p><small class="footer_copyright">Copyright @Bizconcier All Rights Reserved.</small>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
