@@ -16,4 +16,4 @@
 - 吉室設計 ( V1.0 )  [連結](https://by-point.github.io/CaseDemoDisplay/cheese/views/index.html)
 
 
-- 坤宸建設 ( V1.0 )  [連結](https://by-point.github.io/CaseDemoDisplay/kunChen/views/index.html)
+- 坤宸建設 ( V1.0 )  [連結](https://by-point.github.io/CaseDemoDisplay/kunChen/views/index/index.html)
