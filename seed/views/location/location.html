@@ -32,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <main class="location">
+    <main class="location" id="location-map">
       <section class="page-banner">
         <div class="page-banner_wrap" style="background: url(../../assets/images/icon/page/banner-bg.jpg)"><img class="page-banner_icon" src="../../assets/images/icon/page/baner-icon.png" alt=""/></div>
       </section>
@@ -65,8 +65,17 @@
             <h2 class="stores_title"><span class="en">SHI DEI IN TAIWAN </span><span class="ch">服務據點</span>
               <div class="stores_select">
                 <div class="stores_select_item mr-10">
-                   選擇縣市<i class="fas fa-sort-down"></i></div>
-                <div class="stores_select_item">選擇區域<i class="fas fa-sort-down"></i></div>
+                  <div class="current-city" @click="city_list_active = !city_list_active"><span>{{current_city}}</span><i class="fas fa-sort-down"></i></div>
+                  <ul class="city-list" :class="{'active':city_list_active}">
+                    <li class="city-list_item" v-for="(item, index) in all_cities" :key="index" @click="select_city(item)">{{item}}</li>
+                  </ul>
+                </div>
+                <div class="stores_select_item">
+                  <div class="current-area" @click="area_list_active = !area_list_active"><span>{{current_area}}</span><i class="fas fa-sort-down"></i></div>
+                  <ul class="area-list" :class="{'active':area_list_active}">
+                    <li class="area-list_item" v-for="(item, index) in city_has_area" :key="index" @click="select_area(item)">{{item}}</li>
+                  </ul>
+                </div>
               </div>
             </h2>
             <ul class="stores-list">
@@ -97,7 +106,7 @@
       <div class="footer_nav">
         <div class="footer_nav_wrap"><img class="footer-logo" src="../../assets/images/logo/footer-logo.png" alt=""/>
           <div class="page-details">
-            <div class="page-details_content">
+            <div class="page-details_content first">
               <h3>關於喜得</h3>
               <ul class="page-list">
                 <li class="page-list_item"><a href="">品牌故事 </a></li>
@@ -107,7 +116,7 @@
             </div>
             <div class="page-details_content">
               <h3>最新消息</h3>
-              <h3>每位菜單</h3>
+              <h3>美味菜單</h3>
             </div>
             <div class="page-details_content">
               <h3>門市據點</h3>
@@ -126,7 +135,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.js"></script>
     <script src="../../assets/javascripts/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../../assets/javascripts/script.js"></script>
   </body>
